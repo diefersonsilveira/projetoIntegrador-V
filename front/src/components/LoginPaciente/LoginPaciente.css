@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.login-container {
+  max-width: 420px;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  font-family: 'Poppins', sans-serif;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.login-titulo {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2b2d42;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.5px;
+}
+
+.login-subtitulo {
+  font-size: 0.95rem;
+  color: #8d99ae;
+  font-weight: 400;
+}
+
+.login-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.login-grupo-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.login-label {
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #2b2d42;
+}
+
+.login-input {
+  padding: 0.9rem 1.2rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background-color: #f8fafc;
+}
+
+.login-input:focus {
+  border-color: #4361ee;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.1);
+  background-color: #fff;
+}
+
+.login-input::placeholder {
+  color: #94a3b8;
+  opacity: 0.7;
+}
+
+.login-opcoes {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: -0.5rem;
+}
+
+.login-lembrar {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  cursor: pointer;
+}
+
+.login-checkbox {
+  width: 1.1rem;
+  height: 1.1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  appearance: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.login-checkbox:checked {
+  background-color: #4361ee;
+  border-color: #4361ee;
+}
+
+.login-checkbox:checked::after {
+  content: '✓';
+  position: absolute;
+  color: white;
+  font-size: 0.7rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login-lembrar-texto {
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+.login-botao {
+  background-color: #4361ee;
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.login-botao:hover {
+  background-color: #3a56d4;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(67, 97, 238, 0.2);
+}
+
+.login-botao:active {
+  transform: translateY(0);
+}
+
+.login-botao-carregando {
+  background-color: #94a3b8;
+  cursor: not-allowed;
+}
+
+.login-botao-spinner {
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.login-erro-geral {
+  color: #dc2626;
+  background-color: #fee2e2;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.login-erro {
+  color: #dc2626;
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+}
+
+.login-rodape-formulario {
+  text-align: center;
+  color: #64748b;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.login-link {
+  color: #4361ee;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.login-link:hover {
+  color: #3a56d4;
+  text-decoration: underline;
+}
