@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import LoginPaciente from './components/LoginPaciente/LoginPaciente';
 import CadastroPaciente from './components/CadastroPaciente/CadastroPaciente';
+import CadastroConsulta from './components/CadastroConsulta/CadastroConsulta';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           {}
           <Route path="/login" element={<LoginPaciente />} />
           <Route path="/cadastro" element={<CadastroPaciente />} />
+          <Route path="/consulta" element={<CadastroConsulta/>}/>
           
           {}
           <Route path="*" element={<div>Página não encontrada</div>} />
